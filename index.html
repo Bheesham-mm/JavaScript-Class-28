@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>28 assignment page</title>
+    <style>
+        .small{
+            color: green;
+            font-size: 18px; 
+        }
+        .big{
+            color: green;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p id="paragraph">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta nulla distinctio hic sit. Ut, optio delectus. Saepe dolore impedit totam enim recusandae eos, aliquid quam unde, quibusdam explicabo deserunt quidem.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta nulla distinctio hic sit. Ut, optio delectus. Saepe dolore impedit totam enim recusandae eos, aliquid quam unde, quibusdam explicabo deserunt quidem.
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta nulla distinctio hic sit. Ut, optio delectus. Saepe dolore impedit totam enim recusandae eos, aliquid quam unde, quibusdam explicabo deserunt quidem.
+    </p>
+    <button id="btn1" onclick="paraFun('small')">Small</button>
+    <button id="btn2" onclick="paraFun('big')">Big</button>
+    <button id="btn2" onclick="paraFun('Normal')">Normal size</button>
+    <!-- <script src="script.js"></script> -->
+    <script>
+        function paraFun(funParam) {
+        // console.log(funParam)
+        var para = document.getElementById('paragraph')
+        // console.log(para)
+        para.className = funParam;
+        }
+    </script>
+</body>
+</html>
